@@ -44,14 +44,15 @@
 
                 {% for item in selectedservices %}
                   
-                  <a href="/list?servicetype={{ item }}">{{ item }}</a>,
+                  <!--<a href="/list?servicetype={{ item }}">{{ item }}</a>,-->
+                  {{ item }}, 
                   
                 {% else %}
                   no services were selected
                 {% endfor %}
 
             <a href="phone-finder-time-edit">{{ data['urgency'] }} </a>, 
-            within <a href="phone-finder-location-edit&dist{{ data['distance'] }}=checked">{{ data['distance'] }} miles of {{ data['location'] }}</a>
+            within <a href="phone-finder-location-edit&dist{{ data['distance'] }}=checked">{{ data['distance'] }} miles of the location.</a>
           </p>
         </form>
 
@@ -74,7 +75,7 @@
       <ul class="list phone-list results-list" style="">
         <a href="phone-finder-result2"><li class="result" style="padding-top:1em">
           <p><span class="result-distance">1.2 miles</span> <span class="open-now">Currently open</span></p>
-          <h3 class="result-title">NHS Oxford - Care Homes with Nursing - Fewcott Home</h3>
+          <h3 class="result-title">Minor Injuries - Bicester First Aid Unit</h3>
           
           <p class="result-type">
           {{ selectedservices | random }}
@@ -84,7 +85,7 @@
         <a href="phone-finder-result2">
           <li class="result">
           <p><span class="result-distance">3.0 miles</span> <span class="open-now">Currently open</span></p>
-          <h3 class="result-title">NHS Oxford - Care Homes with Nursing - St Annes Care Hom</h3>
+          <h3 class="result-title">ED - Horton General Hospital, Banbury - for minor injuries - MECS 2</h3>
           
           <p class="result-type">
           {{ selectedservices | random }}
@@ -93,7 +94,7 @@
 
         <a href="phone-finder-result2"><li class="result">
           <p><span class="result-distance">3.8 miles</span></p>
-          <h3 class="result-title">NHS Oxford - Care Homes with Nursing - Featherton House</h3>
+          <h3 class="result-title">Minor Injuries - Chipping Norton First Aid Unit</h3>
           
           <p class="result-type">{{ selectedservices | random }}
           </p>
@@ -101,14 +102,14 @@
 
         <a href="phone-finder-result2"><li class="result">
           <p><span class="result-distance">4.5 miles</span> <span class="open-now">Currently open</span></p>
-          <h3 class="result-title">NHS Oxford - Care Homes with Nursing - Holt Farm</h3>
+          <h3 class="result-title">Emergency Department John Radcliffe Hospital, Oxford</h3>
           
           <p class="result-type">{{ selectedservices | random }}</p>
         </li></a>
 
         <a href="phone-finder-result2"><li class="result">
           <p><span class="result-distance">4.9 miles</span> </p>
-          <h3 class="result-title">NHS Oxford - Care Homes with Nursing - Lake House</h3>
+          <h3 class="result-title">Emergency Department Stoke Mandeville Hospital, Bucks</h3>
           
           <p class="result-type">{{ selectedservices | random }}</p>
         </li></a>
@@ -116,14 +117,14 @@
 
         <li class="result">
           <p><span class="result-distance">6.1 miles</span> <span class="open-now">Currently open</span></p>
-          <h3 class="result-title">DN - SPA - Community Services SPA for Healthcare Professionals</h3>
+          <h3 class="result-title">Urgent Care Centre - Milton Keynes</h3>
 
           <p class="result-type">{{ selectedservices | random }}</p>
         </li>
 
         <li class="result">
           <p><span class="result-distance">6.1 miles</span> <span class="open-now">Currently open</span></p>
-          <h3 class="result-title">DN SPA - Community Services SPA - PATIENT REFERRALS - Oxfordshire</h3>
+          <h3 class="result-title">Emergency Department - Milton Keynes University Hospital - Milton Keynes</h3>
 
           <p class="result-type">{{ selectedservices | random }}</p>
         </li>
