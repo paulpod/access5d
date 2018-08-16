@@ -37,7 +37,7 @@
           <form class="form" action="/services" method="get" >
 
           <div class="phonesearchbox">
-            <input class="search" placeholder="Search" type="search" />
+            <input class="search" placeholder="Search" type="search" name="forminput" id="forminput" autofocus />
 
 
           </div>
@@ -47,13 +47,13 @@
           <br>
           
 
-          <ul class="list phone-list" style="">
+          <ul class="list phone-list" id="hiddenlist" style="visibility: hidden;">
             
-            <li style="background-color: #ff6;position: relative">
+            <!--<li style="background-color: #ff6;position: relative">
               <div id="phonetagline">
                 <span>Type to filter this list, you can select multiple service types, review selections at next step</span>
               </div>
-            </li>
+            </li>-->
 
             <li class="multiple-choice">
               <input id="services-s1" type="checkbox" name="selectedservices" value="Acute Assessment unit">
@@ -363,7 +363,7 @@
 
         </div>
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.js"></script>
 
         <div>
           <input class="phonebutton phone-next" type="submit" value="Next">

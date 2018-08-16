@@ -37,3 +37,11 @@ $('.clickMe').toggle(
       $('#' + $(this).attr('for')).hide();
       $(this).text('show');
 });
+
+
+$(document).ready(function(){
+  $('input#forminput').keypress(function() {
+      $('#hiddenlist').css("visibility","visible");
+      $(this).focus();
+    });
+});
