@@ -473,14 +473,15 @@ border-left: 12px solid #cdf;
 }
 /* special case for the buttons on the front screen, sigh */
 .introphonebutton {
-	height: 50px;
+	height: 58px;
 	color: white;
 	width: 420px;
 	border: none;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	font-weight: 600;
 	border-radius: 4px;
 	margin: 10px 0 5px 30px;
+	border-bottom: 5px solid #005EB8;
 }
 
 
@@ -530,18 +531,19 @@ border-left: 12px solid #cdf;
 .introphonebutton {
 	text-align: left;
 	text-indent: 3.5em;
+
 }
 .introphonebutton#service-search-patient {
 	background-image: url('/public/images/search-service-patient.svg');
 	background-repeat: no-repeat;
 	background-position: 12px 5px;
-	background-size: 48px;
+	background-size: 64px;
 }
 .introphonebutton#service-search-name {
 	background-image: url('/public/images/search-service-name.svg');
 	background-repeat: no-repeat;
 	background-position: 12px 5px;
-	background-size: 48px;
+	background-size: 64px;
 }
 .introphonebutton#service-search-location {
 	background-image: url('/public/images/search-service-location.svg');
