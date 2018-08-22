@@ -27,14 +27,28 @@
 
         <br clear="all">
 
+        <!--<input type="text" id="output">-->
+
+
     </div>
 
 
         <div id="services" class="">
 
+          <div style="height: 1.9em;z-index: 1000;">
+            <p class="phone-bodytext"><strong>Service type</strong></p>
+
+            <!-- probably dont need this hint text on this 
+            <p class="phone-bodytext">
+              Type a name or keyword for services below 
+            </p>-->
+
+          </div>
 
 
-          <form class="form" action="/services" method="get" >
+
+          <form class="form" action="/services" method="get" autocomplete="off">
+
 
           <div class="phonesearchbox">
             <input class="search" placeholder="Search" type="search" name="forminput" id="forminput" autofocus />
@@ -350,10 +364,14 @@
               <p class="synonym"></p>
             </li>
             <li class="multiple-choice">
-              <input id="services-s50" type="checkbox" name="selectedservices" value="Walk In Centre (WIC)">
+              <input id="services-s50" type="checkbox" name="selectedservices" value="Walk In Centre (WIC)" class="listitem">
 
               <label for="services-s50" class="name">Walk In Centre (WIC)</label>
               <p class="synonym">wound cuts stab bleeding</p>
+            </li>
+
+            <li class="multiple-choice">
+              <p>&nbsp;</p>
             </li>
 
 
@@ -365,13 +383,22 @@
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.js"></script>
 
+
+
+
         <div>
+
+          
+          <!--<button id="sendbutton" class="phonebutton phone-next">Next</button>-->
+
           <input class="phonebutton phone-next" type="submit" value="Next">
 
             <!--<a href="phone-finder-time"><button class="phonebutton phone-next">Next</button></a>-->
         </div>
 
-      </form>
+<!--      </form>-->
+
+
 
         <div id="phone-browser-nav">
           <img id="ios-browser-nav" src="/public/images/spacer.png" border="0" width="480" usemap="#ios-browser-navmap" />
@@ -394,6 +421,8 @@
 };
 
 var serviceList = new List('services', options);
+
+
 </script>
 
 

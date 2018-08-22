@@ -114,7 +114,11 @@ router.get('/patient', function (req, res) {
   var str = selectedservices;
   var selectedservices = str.split(',');
 
-  res.render('phone-finder-results', { selectedservices:selectedservices })
+  if (selectedservices.includes('Dental Services') == true) {
+    res.render('phone-finder-results-dental', { selectedservices:selectedservices })
+  } else {
+    res.render('phone-finder-results', { selectedservices:selectedservices })
+  }
 })
 
 //same as above for returning to the search results
@@ -143,15 +147,16 @@ router.get('/services', function (req, res) {
   var compare = req.query.selectedservices
   var selectedservices = req.query.selectedservices
 
+  console.log(selectedservices.length)
   console.log(selectedservices)
 
-  if (selectedservices.length >= 2) {
+  //if (selectedservices.length >= 2) {
     // more than one selected so review the selected items
     res.render('phone-finder-selected', { selectedservices:selectedservices })
-  } else {
+  //} else {
     // none or one selected so no need to review
-    res.render('phone-finder-time')
-  }
+    //res.render('phone-finder-time')
+  //}
 
   
 })

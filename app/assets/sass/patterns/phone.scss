@@ -141,6 +141,8 @@ padding-left: 40px;
 	display: none;
 }
 
+#hiddenlist {margin-top:-20px;}
+
 div#phone-browser-nav {
 	background-image: url('/public/images/ios-browser-nav.png');
 	background-repeat: no-repeat;
@@ -148,7 +150,7 @@ div#phone-browser-nav {
 	width:480px;
 	height:89px;
 	position: absolute;
-	top:850px;
+	top:852px;
 }
 
 .phone-heading {
@@ -280,12 +282,30 @@ li.result {
 li.result p {
 	margin: 0;
 }
+
+
+
 .open-now {
 	font-weight: 600;
 	color: #080;
 	font-size: 16px;
 	line-height: 1.5;
 }
+.closed-now {
+	font-weight: 600;
+	color: #a22;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.open-unknown {
+	font-weight: 600;
+	color: #e60;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+
 
 .result-distance {
 	display: inline-block;
@@ -557,4 +577,19 @@ div#services {
 #reported-place {
 	position: relative;
 	left: 1.5em;
+}
+
+
+.feedback-banner {
+	background-color: #feed8a;
+	padding: 0.75em 0 0.5em 1.6em;
+	margin-bottom: 1em;
+}
+.feedback-item {
+	background-image: url('/public/images/blue-right-arrow.svg');
+	background-repeat: no-repeat;
+	background-position: 420px center;
+	background-size: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 0;
 }

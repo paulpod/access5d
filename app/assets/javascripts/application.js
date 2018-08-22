@@ -40,8 +40,41 @@ $('.clickMe').toggle(
 
 
 $(document).ready(function(){
+
   $('input#forminput').keypress(function() {
       $('#hiddenlist').css("visibility","visible");
       $(this).focus();
     });
+
+  
+
+
+
+  var selected = [];
+
+  $('#hiddenlist input:checked').each(function() {
+      selected.push($(this).attr('name'));
+  });
+  console.log(selected);
+
+});
+
+
+
+$('input').click(function(event){
+  //event.preventDefault();
+
+  var selected = [];
+
+  $("#hiddenlist input:checkbox:checked").map(function(){
+    selected.push($(this).val());
+
+    currentVal = $('input[name='+'output'+']').val();
+    newVal = currentVal & selected;
+    $('#output').val(newVal);
+
+    console.log(selected);
+  });
+
+  
 });
