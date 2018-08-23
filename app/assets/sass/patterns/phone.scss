@@ -291,6 +291,12 @@ li.result p {
 	font-size: 16px;
 	line-height: 1.5;
 }
+.open-soon {
+	font-weight: 600;
+	color: #d60;
+	font-size: 16px;
+	line-height: 1.5;
+}
 .closed-now {
 	font-weight: 600;
 	color: #a22;
@@ -299,7 +305,7 @@ li.result p {
 }
 .open-unknown {
 	font-weight: 600;
-	color: #e60;
+	color: #80f;
 	font-size: 16px;
 	line-height: 1.5;
 }
